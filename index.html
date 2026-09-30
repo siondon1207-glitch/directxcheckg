@@ -1,23 +1,1160 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
+
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LegalService",
+          "@id": "https://law.reliabledone.com/guide/jeju-rehabilitation#service",
+          "name": "제주도개인회생 법률상담 및 도산 절차 연구 지원센터",
+          "url": "https://law.reliabledone.com/guide/jeju-rehabilitation",
+          "description": "제주지방법원 관할 개인회생, 파산면책 사건 및 채무조정 전문 법률 종합 컨설팅",
+          "areaServed": [
+            {
+              "@type": "AdministrativeArea",
+              "name": "제주시"
+            },
+            {
+              "@type": "AdministrativeArea",
+              "name": "서귀포시"
+            }
+          ],
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "도산 회생 절차 대리 서비스",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "제주개인회생 신청 대리"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "금지명령 및 중지명령 신속 접수"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "변제계획안 최적화 수립"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "@type": "Article",
+          "@id": "https://law.reliabledone.com/guide/jeju-rehabilitation#article",
+          "isPartOf": {
+            "@type": "WebPage",
+            "@id": "https://law.reliabledone.com/guide/jeju-rehabilitation"
+          },
+          "headline": "제주도개인회생 신청 자격 및 절차, 수임료 비용과 인가율 심층 비교 분석",
+          "description": "제주지방법원 도산 전문 재판부의 최신 판례 경향, 2026년 및 2027년 최저생계비 반영 기준, 지역별 인가 전략 총정리",
+          "datePublished": "2026-01-15T09:00:00+09:00",
+          "dateModified": "2026-03-30T14:30:00+09:00",
+          "inLanguage": "ko-KR",
+          "mainEntityOfPage": "https://law.reliabledone.com/guide/jeju-rehabilitation"
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://law.reliabledone.com/guide/jeju-rehabilitation#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "제주도개인회생 신청 시 필요한 기본 자격 조건은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "지속적이고 반복적인 급여소득 또는 영업소득이 증명되어야 하며, 담보 채무는 최대 15억 원, 무담보 채무는 최대 10억 원 이하이어야 합니다. 채무 총액이 재산의 청산가치보다 많아야 하며, 제주지방법원 관할 구역(제주시, 서귀포시)에 주민등록 주소지나 실거주지, 또는 사업장 직장이 위치해 있어야 합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "제주지방법원의 개인회생 금지명령 소요 기간과 기각률은 어떠한가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "제주지방법원은 전자소송 접수 후 통상 3일에서 7일 이내에 금지명령 결정을 내리는 편입니다. 다만 최근 채무 발생 비율이 70%를 초과하거나 주식, 코인, 도박 채무가 주를 이룰 경우 심사가 엄격해져 기각되거나 보정권고가 강도 높게 발생할 수 있으므로 치밀한 소명이 요구됩니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "제주 지역 특성상 연세(年貰) 보증금은 재산가치(청산가치)에 어떻게 반영되나요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "제주도는 1년치 월세를 일시불로 선납하는 연세 계약이 보편적입니다. 잔여 거주 기간에 해당하는 미차감 월세 선납금은 경우에 따라 재산가치로 산정될 수 있으므로, 임대차계약서와 실제 송금 내역을 면밀히 분석하여 불필요한 청산가치 반영을 최소화하는 법리적 주장이 필수적입니다."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://law.reliabledone.com/guide/jeju-rehabilitation#howto",
+          "name": "제주도개인회생 5단계 인가 결정 진행 절차",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "자격 진단 및 소득 증빙 서류 구비",
+              "text": "소득금액증명원, 원천징수영수증, 급여계좌 거래내역을 분석하여 가용소득을 산출합니다."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "제주지방법원 사건 접수 및 금지명령 발령",
+              "text": "채권자목록, 재산목록, 수입지출목록, 진술서, 변제계획안을 전자소송으로 접수하고 채권추심을 전면 차단합니다."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "회생위원 선임 및 보정권고 이행",
+              "text": "법원 회생위원의 채무 사용처 조사 및 소명 요구에 맞추어 보정서를 기한 내 제출합니다."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "개시결정 및 채권자집회 참석",
+              "text": "개시결정 후 지정된 계좌로 변제금을 적립하며, 제주지방법원 본원 집회 기일에 출석합니다."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "변제계획 인가 및 면책 신청",
+              "text": "인가 결정을 득한 후 약정 기간 동안 성실히 변제금을 납입하고 최종 면책 결정을 받아 잔여 채무를 탕감받습니다."
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800&display=swap');
+
+        :root {
+            --brand-primary: #1e3a8a;
+            --brand-primary-light: #3b82f6;
+            --brand-secondary: #0d9488;
+            --brand-secondary-light: #14b8a6;
+            --accent-warm: #d97706;
+            --accent-warm-light: #fef3c7;
+            --bg-base: #f8fafc;
+            --bg-surface: #ffffff;
+            --bg-subtle: #f1f5f9;
+            --border-soft: #e2e8f0;
+            --border-strong: #cbd5e1;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --text-light: #94a3b8;
+            --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
+            --shadow-lg: 0 10px 25px rgba(0, 0, 0, 0.06);
+            --radius-md: 10px;
+            --radius-lg: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+            background-color: var(--bg-base);
+            color: var(--text-main);
+            line-height: 1.85;
+            font-size: 16.5px;
+            letter-spacing: -0.015em;
+            word-break: keep-all;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e293b 0%, #1e3a8a 60%, #0f766e 100%);
+            color: #ffffff;
+            padding: 3.5rem 1.5rem 2.8rem;
+            text-align: center;
+        }
+
+        .header-container {
+            max-width: 1040px;
+            margin: 0 auto;
+        }
+
+        .badge-top {
+            display: inline-block;
+            background-color: rgba(255, 255, 255, 0.15);
+            color: #f1f5f9;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.88rem;
+            font-weight: 600;
+            margin-bottom: 1.2rem;
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.35rem;
+            font-weight: 800;
+            line-height: 1.35;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        header p {
+            font-size: 1.12rem;
+            color: #cbd5e1;
+            max-width: 820px;
+            margin: 0 auto 2.2rem;
+            font-weight: 400;
+        }
+
+        nav {
+            background: rgba(15, 23, 42, 0.45);
+            border-radius: var(--radius-md);
+            padding: 0.75rem;
+            max-width: 880px;
+            margin: 0 auto;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        nav a {
+            color: #f8fafc;
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 500;
+            padding: 0.5rem 1.1rem;
+            border-radius: 6px;
+            transition: all 0.25s ease;
+        }
+
+        nav a:hover {
+            background-color: var(--brand-secondary-light);
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1040px;
+            margin: 2.5rem auto;
+            padding: 0 1.25rem;
+        }
+
+        section {
+            background: var(--bg-surface);
+            padding: 2.8rem 2.5rem;
+            margin-bottom: 2.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-soft);
+        }
+
+        h2 {
+            color: var(--brand-primary);
+            font-size: 1.85rem;
+            font-weight: 700;
+            padding-bottom: 0.85rem;
+            margin-bottom: 1.6rem;
+            border-bottom: 2px solid var(--brand-secondary);
+            position: relative;
+        }
+
+        h3 {
+            color: #0f172a;
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-top: 2.4rem;
+            margin-bottom: 1rem;
+            padding-left: 0.85rem;
+            border-left: 4px solid var(--brand-secondary);
+        }
+
+        h4 {
+            color: var(--brand-primary);
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 1.5rem 0 0.6rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: var(--text-muted);
+            font-size: 1.02rem;
+        }
+
+        strong {
+            color: var(--text-main);
+            font-weight: 700;
+        }
+
+        .highlight-text {
+            color: var(--brand-primary);
+            font-weight: 600;
+        }
+
+        ul, ol {
+            margin: 1.2rem 0 1.6rem 1.6rem;
+            color: var(--text-muted);
+        }
+
+        li {
+            margin-bottom: 0.65rem;
+        }
+
+        .info-card {
+            background-color: var(--bg-subtle);
+            border-left: 4px solid var(--brand-primary);
+            padding: 1.4rem 1.6rem;
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+            margin: 1.8rem 0;
+        }
+
+        .info-card p {
+            margin: 0;
+            color: var(--text-main);
+        }
+
+        .tag-cluster {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin: 1.8rem 0;
+        }
+
+        .tag-item {
+            background: #eef2ff;
+            color: var(--brand-primary);
+            border: 1px solid #c7d2fe;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.86rem;
+            font-weight: 500;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0 1rem;
+            background: #ffffff;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-soft);
+        }
+
+        thead th {
+            background-color: #1e293b;
+            color: #ffffff;
+            font-weight: 600;
+            padding: 1rem 0.9rem;
+            font-size: 0.95rem;
+            text-align: center;
+        }
+
+        tbody td {
+            padding: 1rem 0.9rem;
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-soft);
+            text-align: center;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        .text-left {
+            text-align: left !important;
+        }
+
+        .calculator-box {
+            background: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: var(--radius-lg);
+            padding: 2.2rem;
+            margin: 2.2rem 0;
+            box-shadow: var(--shadow-md);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.4rem;
+            margin-bottom: 1.6rem;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .input-group label {
+            font-weight: 600;
+            font-size: 0.92rem;
+            margin-bottom: 0.45rem;
+            color: var(--text-main);
+        }
+
+        .input-group input, .input-group select {
+            padding: 0.75rem 0.9rem;
+            border: 1px solid var(--border-strong);
+            border-radius: 8px;
+            font-size: 0.96rem;
+            font-family: inherit;
+            background-color: #ffffff;
+            transition: all 0.2s ease;
+        }
+
+        .input-group input:focus, .input-group select:focus {
+            outline: none;
+            border-color: var(--brand-primary-light);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        .calc-action-btn {
+            width: 100%;
+            background: linear-gradient(135deg, var(--brand-primary) 0%, #1e40af 100%);
+            color: #ffffff;
+            border: none;
+            padding: 1rem;
+            font-size: 1.08rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.1s ease;
+        }
+
+        .calc-action-btn:hover {
+            background: linear-gradient(135deg, #1e40af 0%, #1d4ed8 100%);
+        }
+
+        .calc-action-btn:active {
+            transform: scale(0.99);
+        }
+
+        .calc-result-panel {
+            margin-top: 1.8rem;
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            display: none;
+        }
+
+        .calc-result-panel h4 {
+            color: #166534;
+            margin: 0 0 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .result-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.96rem;
+        }
+
+        .result-row span.label {
+            color: #15803d;
+        }
+
+        .result-row span.val {
+            font-weight: 700;
+            color: #14532d;
+        }
+
+        .chart-section {
+            background-color: #f8fafc;
+            border: 1px solid var(--border-soft);
+            border-radius: var(--radius-md);
+            padding: 1.8rem;
+            margin: 2rem 0;
+        }
+
+        .chart-row {
+            margin-bottom: 1.2rem;
+        }
+
+        .chart-header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.92rem;
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+            color: var(--text-main);
+        }
+
+        .chart-bar-bg {
+            background-color: #e2e8f0;
+            height: 22px;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .chart-bar-fill {
+            background: linear-gradient(90deg, var(--brand-secondary) 0%, var(--brand-primary-light) 100%);
+            height: 100%;
+            border-radius: 6px;
+            width: 0%;
+            transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .faq-accordion {
+            margin: 2rem 0;
+        }
+
+        .faq-node {
+            border: 1px solid var(--border-soft);
+            border-radius: 8px;
+            margin-bottom: 0.85rem;
+            background: #ffffff;
+            overflow: hidden;
+        }
+
+        .faq-q {
+            padding: 1.1rem 1.4rem;
+            font-weight: 600;
+            color: var(--text-main);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            transition: background-color 0.2s ease;
+        }
+
+        .faq-q:hover {
+            background-color: var(--bg-subtle);
+        }
+
+        .faq-q-indicator {
+            font-size: 0.85rem;
+            color: var(--brand-primary);
+            font-weight: 700;
+        }
+
+        .faq-a {
+            padding: 1.1rem 1.4rem;
+            border-top: 1px solid var(--border-soft);
+            background-color: #fbfcfe;
+            color: var(--text-muted);
+            font-size: 0.98rem;
+            display: none;
+            line-height: 1.8;
+        }
+
+        .external-authorities {
+            background: #ffffff;
+            border: 1px solid var(--border-soft);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .external-authorities a {
+            display: block;
+            color: var(--brand-primary);
+            text-decoration: none;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--border-soft);
+            font-weight: 500;
+            font-size: 0.98rem;
+            transition: color 0.2s ease;
+        }
+
+        .external-authorities a:last-child {
+            border-bottom: none;
+        }
+
+        .external-authorities a:hover {
+            color: var(--brand-secondary);
+            text-decoration: underline;
+        }
+
+        .cta-banner {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0d9488 100%);
+            color: #ffffff;
+            padding: 2.2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            margin: 3rem 0 1rem;
+        }
+
+        .cta-banner h3 {
+            color: #ffffff;
+            border-left: none;
+            padding-left: 0;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            font-size: 1.55rem;
+        }
+
+        .cta-banner p {
+            color: #e0f2fe;
+            margin-bottom: 1.5rem;
+        }
+
+        .cta-link-btn {
+            display: inline-block;
+            background-color: #ffffff;
+            color: var(--brand-primary);
+            font-weight: 700;
+            padding: 0.95rem 2.2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.05rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: all 0.2s ease;
+        }
+
+        .cta-link-btn:hover {
+            background-color: #f8fafc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 2.8rem 1.5rem;
+            text-align: center;
+            font-size: 0.88rem;
+            line-height: 1.8;
+        }
+
+        footer a {
+            color: #cbd5e1;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.75rem;
+            }
+            section {
+                padding: 1.8rem 1.25rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+            h3 {
+                font-size: 1.25rem;
+            }
+            .calculator-box {
+                padding: 1.5rem 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <span class="badge-top">제주지방법원 관할 도산 실무 가이드 2026-2027</span>
+            <h1>제주도개인회생 신청 자격 및 절차 수임료 비용 비교 총정리</h1>
+            <p>제주시와 서귀포시 전역을 아우르는 채무조정 전문 법률 분석. 복잡한 소득 소명과 부동산 및 연세 보증금 청산가치 평가, 최저생계비 개정안에 맞춘 최적의 변제계획안 설계 전략을 제시합니다.</p>
+            <nav aria-label="본문 빠른 이동">
+                <ul>
+                    <li><a href="#jeju-qualification">신청 자격 및 관할</a></li>
+                    <li><a href="#legal-costs">수임료 비용 구조</a></li>
+                    <li><a href="#court-characteristics">제주지방법원 실무 특성</a></li>
+                    <li><a href="#calculator-simulation">변제금 계산기</a></li>
+                    <li><a href="#community-analysis">사례 및 평판 분석</a></li>
+                    <li><a href="#faq-section">자주 묻는 질문</a></li>
+                    <li><a href="#authoritative-sources">공인 참고 자료</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
     <main>
-      <h1>Home page</h1>
+        <section id="jeju-qualification">
+            <h2>제주도개인회생, 자격 요건과 관할 법원의 기본 원칙</h2>
+            <p>채무로 고통받는 상황에서 <strong>제주도개인회생</strong> 제도는 채무자의 장래 계속적이고 반복적인 수입을 바탕으로 채권자와 법률관계를 합리적으로 조정하여 재기를 돕는 국가적 법정 채무조정 장치입니다. 대한민국 헌법과 채무자 회생 및 파산에 관한 법률에 근거하여 운영되는 본 제도는 사적 워크아웃(신용회복위원회)과 달리 금융권 채무뿐 아니라 사채, 대부업체, 개인 간 차용금, 물품대금, 카드론, 통신 연체 요금, 조세 및 공과금까지 포괄적으로 조정 대상에 포함할 수 있다는 강력한 <strong>장점</strong>을 가지고 있습니다.</p>
+
+            <p>개인회생을 신청하기 위해서는 우선적으로 <strong>금액</strong> 기준에 부합해야 합니다. 담보권이 설정된 유담보 채무는 최대 15억 원, 무담보 신용 채무는 최대 10억 원 이하이어야 하며 총 채무의 합산 금액이 최소 1,000만 원 이상이어야 타당성이 확보됩니다. 아울러 보유하고 있는 총 재산(부동산, 임차보증금, 자동차, 예적금, 보험 해약환급금 등)의 가액을 평가한 청산가치보다 총 채무액이 반드시 커야 한다는 청산가치 보장의 원칙이 엄격하게 적용됩니다.</p>
+
+            <div class="info-card">
+                <p><strong>제주 관할 법원의 중요성:</strong> 제주특별자치도는 전국 14개 지방법원 관할 구조 중 단일 지방법원인 <strong>제주지방법원</strong>이 제주시 및 서귀포시 전역의 개인회생 및 파산 사건을 독점 관할합니다. 신청인의 주민등록등본상 주소지, 실제 우편물을 수령하는 실거주지, 또는 직장 및 사업장의 소재지가 제주도 내에 소재할 때 관할권이 정상 성립합니다.</p>
+            </div>
+
+            <p>제주도 내 읍면동 전 지역의 거주자는 본 제도의 대상이 됩니다. 도심지인 <strong>제주시</strong>의 <strong>이도이동</strong>, <strong>일도일동</strong>, <strong>일도이동</strong>, <strong>이도일동</strong>, <strong>아라동</strong>, <strong>노형동</strong>, <strong>연동</strong>, <strong>삼도동</strong>(삼도일동, 삼도이동), <strong>용담동</strong>, <strong>건입동</strong>, <strong>화북동</strong>, <strong>삼양동</strong>, <strong>봉개동</strong>, <strong>외도동</strong>, <strong>이호동</strong>, <strong>도두동</strong>부터 서부와 동부의 주요 읍면인 <strong>한림읍</strong>, <strong>애월읍</strong>, <strong>구좌읍</strong>, <strong>조천읍</strong>, <strong>한경면</strong>, 도서 지역인 <strong>추자면</strong>, <strong>우도면</strong>에 이르기까지 동일한 절차가 적용됩니다.</p>
+
+            <p>남부권 <strong>서귀포시</strong>의 경우 <strong>서귀동</strong>, <strong>동홍동</strong>, <strong>서홍동</strong>, <strong>대륜동</strong>, <strong>대천동</strong>, <strong>중문동</strong>, <strong>예래동</strong>, <strong>송산동</strong>, <strong>정방동</strong>, <strong>중앙동</strong>, <strong>천지동</strong>, <strong>효돈동</strong>, <strong>영천동</strong> 및 농어촌 배후지인 <strong>대정읍</strong>, <strong>남원읍</strong>, <strong>성산읍</strong>, <strong>안덕면</strong>, <strong>표선면</strong> 등 전 지역 주민이 제주지방법원 종합민원실 및 전자소송 포털을 통해 접수하게 됩니다.</p>
+
+            <div class="tag-cluster" aria-label="제주도 행정구역 및 회생 핵심 연관어">
+                <span class="tag-item">제주시개인회생</span>
+                <span class="tag-item">서귀포시개인회생</span>
+                <span class="tag-item">노형동채무상담</span>
+                <span class="tag-item">연동법률상담</span>
+                <span class="tag-item">아라동개인파산</span>
+                <span class="tag-item">이도동법무사</span>
+                <span class="tag-item">애월읍회생신청</span>
+                <span class="tag-item">한림읍도산변호사</span>
+                <span class="tag-item">서홍동채무탕감</span>
+                <span class="tag-item">동홍동개인회생</span>
+                <span class="tag-item">대정읍영어도시상담</span>
+                <span class="tag-item">성산읍소상공인회생</span>
+                <span class="tag-item">조천읍신용회복</span>
+            </div>
+
+            <h3>소득 형태별 자격 검토: 급여소득자와 자영업 농수산인의 차이점</h3>
+            <p>제주 지역은 관광, 숙박, 외식업, 운수업, 감귤 농업, 어업에 종사하는 비중이 매우 높아 타 대도시에 비해 <strong>신규</strong> 신청자의 소득 형태가 다채롭습니다. 정규직 직장인은 매월 일정한 근로소득 원천징수영수증과 급여통장 입금 내역을 통해 명확한 소득 산정이 가능하지만, 계절적 편차가 심한 프리랜서, 배달 라이더, 펜션 자영업자, 농어민의 경우 연간 총수입에서 필요경비를 공제한 순소득을 <strong>평균</strong>치로 산출하여 월평균 수입을 정확히 <strong>계산</strong>하는 전문적 회계 분석이 필수적입니다.</p>
+        </section>
+
+        <section id="legal-costs">
+            <h2>제주도개인회생 수임료 비용 구조와 가격표 견적 비교</h2>
+            <p>개인회생 진행을 결심했을 때 신청인들이 가장 먼저 궁금해하는 부분은 직결되는 <strong>비용</strong>이 과연 <strong>얼마</strong>인가 하는 현실적 질문입니다. 법률 시장에서 도산 사건 수임료는 변호사 및 법무사 사무소의 전문성, 사건의 복잡도, 채권자 수에 따라 <strong>견적</strong>이 다르게 책정됩니다. 통상 소비자가 지출해야 하는 <strong>금액</strong>은 크게 법원에 납부하는 필수 공과금과 법률대리인에게 지급하는 보수로 명확히 구분됩니다.</p>
+
+            <div class="info-card">
+                <p><strong>공과금(송달료 및 인지대)과 수임료의 성격:</strong> 대한민국 법원에 전자소송으로 사건을 접수할 때 정부수입인지대(전자접수 기준 27,000원)와 채권자 수에 비례하여 부과되는 대법원 송달료는 법률에 규정된 고정 요금입니다. 반면 사무소 선임 보수는 자유경쟁 요금제로 운영되며 시장 <strong>평균</strong> 수준을 사전에 면밀히 <strong>비교</strong>하고 <strong>선택</strong>해야 위약금이나 추가 부담을 방지할 수 있습니다.</p>
+            </div>
+
+            <h3>2026-2027년 기준 제주도개인회생 실무 요금표 (사무소 형태별 비교)</h3>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>구분 항목</th>
+                        <th>법원 필수 공과금</th>
+                        <th>일반 법무사 사무소</th>
+                        <th>도산 전문 변호사 로펌</th>
+                        <th>온라인 비대면 플랫폼</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>기본 착수금(견적)</strong></td>
+                        <td>인지대 및 송달료 실비</td>
+                        <td>110만 원 ~ 160만 원</td>
+                        <td>150만 원 ~ 250만 원</td>
+                        <td>100만 원 ~ 140만 원</td>
+                    </tr>
+                    <tr>
+                        <td><strong>채권자 수 비례비용</strong></td>
+                        <td>채권자 1곳당 약 52,000원 선</td>
+                        <td>1곳당 3만 원 ~ 5만 원 추가</td>
+                        <td>1곳당 4만 원 ~ 6만 원 추가</td>
+                        <td>정액제 또는 구간별 과금</td>
+                    </tr>
+                    <tr>
+                        <td><strong>분납 조건(약정)</strong></td>
+                        <td>해당 없음(일시 납부)</td>
+                        <td>최대 3개월 ~ 5개월 분납</td>
+                        <td>최대 6개월 ~ 12개월 분납</td>
+                        <td>신용카드 결제 및 제휴 분납</td>
+                    </tr>
+                    <tr>
+                        <td><strong>보정권고 대응 범위</strong></td>
+                        <td>해당 없음</td>
+                        <td>단순 서류 취합 및 제출 대행</td>
+                        <td>심층 소명서 및 변제율 방어 전담</td>
+                        <td>표준 양식 위주 작성 지원</td>
+                    </tr>
+                    <tr>
+                        <td><strong>성공보수 조건</strong></td>
+                        <td>없음</td>
+                        <td>원칙적 없음 (일부 협의)</td>
+                        <td>통상 없음 (특수 난이도 협의)</td>
+                        <td>없음</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>인터넷 커뮤니티나 포털 광고에서 지나치게 <strong>최저가</strong>나 <strong>가장 저렴한곳</strong>, 이른바 <strong>싼곳</strong>만을 강조하는 <strong>업체</strong>의 경우, 계약 초기에는 <strong>계약금</strong> 10만 원이나 20만 원 수준으로 현혹한 후 회생위원의 까다로운 보정명령이 나올 때마다 건당 20만 원에서 40만 원의 추가 비용을 요구하거나 부채증명서 발급 대행 명목으로 과다한 요금을 징수하는 부작용이 존재합니다. 따라서 계약 시 송달료, 부채증명비, 보정비용이 일체 포함된 확정 <strong>가격표</strong>를 서면 계약서로 작성하는 곳을 추천합니다.</p>
+
+            <p>다수의 전문 사무소는 자금 사정이 여의치 않은 의뢰인을 위해 <strong>무약정</strong> 장기 분납을 허용하지 않더라도 <strong>1년</strong>(<strong>12개월</strong>) 분할 납부나 카드 무이자 할부 등 다양한 결제 편의 <strong>혜택</strong>을 지원하고 있습니다. 만일 기각 시 100% <strong>환불</strong>을 약속하는 보증 특약이 존재하는지 여부도 확인해야 하며, 중도 포기나 해지 시 발생하는 <strong>위약금</strong> 조항을 꼼꼼하게 따져보는 지혜가 필요합니다.</p>
+        </section>
+
+        <section id="court-characteristics">
+            <h2>제주지방법원 개인회생 실무의 구조적 특수성과 심사 경향</h2>
+            <p>서울회생법원이나 수원회생법원 등 독립된 전문 회생법원과 달리, <strong>제주지방법원</strong>은 일반 지방법원 단독재판부 체제로 운영되며 관할 지역의 특수성을 면밀히 반영하는 보수적이면서도 엄정한 심사 기준을 유지하고 있습니다. 지역적 특수성을 제대로 이해하지 못하고 타 관할의 통상적 방식대로 서류를 접수할 경우 불필요하게 까다로운 보정명령이 반복되어 인가 기간이 하염없이 지연될 위험이 큽니다.</p>
+
+            <h3>1. 독특한 임대차 방식인 연세(年貰) 제도의 청산가치 반영 논리</h3>
+            <p>제주도는 보증금 500만 원에 1년치 월세 800만 원을 한 번에 선납하는 식의 연세 계약 관행이 여전히 지배적입니다. 서울 등 수도권에서는 보증금 중 주택임대차보호법상 최우선변제금(소액임차보증금)을 면제재산으로 인정받아 청산가치에서 대부분 제외되지만, 제주지방법원에서는 선납한 1년치 월세 중 잔여 거주 기간에 해당하는 미도래 선납금을 채무자의 가용 재산으로 볼 것인지에 대해 법원 회생위원마다 견해 차이가 발생합니다. 숙련된 <strong>컨설팅</strong>과 법리 주장을 통해 해당 선납금은 실질적 주거 유지를 위한 필수 비용이며 환가가 불가능한 소모성 지출임을 명백히 입증해야 변제금이 기형적으로 높아지는 참사를 막을 수 있습니다.</p>
+
+            <h3>2. 관광 산업 종사자 및 소상공인 매출 변동성의 평활화</h3>
+            <p>제주시 연동, 노형동 일대의 상권이나 서귀포 중문관광단지, 성산일출봉, 애월 해안도로 일대 카페 및 펜션을 운영하는 사업자는 성수기와 비수기의 매출 격차가 3배 이상 벌어지는 경우가 흔합니다. 제주지방법원은 단순 직전 3개월 매출을 기준으로 월 변제금을 산출하지 않고, 최소 지난 1년에서 2년간의 부가가치세 과세표준증명원과 종합소득세 신고자료, 계좌 입출금 거래내역을 정밀 대조하여 연간 평균 가용소득을 엄격하게 계측합니다.</p>
+
+            <h3>3. 최근 대출금의 사용처 추적 및 주식, 코인, 도박 채무의 태도</h3>
+            <p>신청일 기준 1년 이내에 발생한 <strong>신규</strong> 대출금이 전체 채무의 50%를 초과하는 경우, 제주지방법원은 매우 엄중한 현미경 심사를 진행합니다. 대출금이 어디로 흘러들어갔는지 계좌 트래킹(금융거래정보제출명령 및 통장 사본 제출)을 철저히 요구하며, 투자 손실금이나 가상화폐, 해외선물, 불법 도박으로 탕진된 자금은 고스란히 채무자의 청산가치(재산가액)에 그대로 산입하라는 가혹한 보정권고가 내려지기도 합니다. 이때 원리금 전액 100% 변제안이 강요되지 않도록 부양가족 인정 범위 확대와 추가 생계비 인정을 위한 타당한 객관적 증빙 제출이 관건입니다.</p>
+        </section>
+
+        <section id="calculator-simulation">
+            <h2>2026-2027년 기준 최저생계비 반영 월 변제금 모의 계산기</h2>
+            <p>개인회생 인가 여부와 월 상환액을 결정하는 가장 핵심적인 공식은 다음과 같습니다. <strong>월 변제금 = 세후 월평균 소득 - 기준 중위소득의 60%(법정 최저생계비)</strong>. 만약 산출된 가용소득으로 36개월(최대 60개월)간 납부한 총 변제액이 신청인의 총 재산(청산가치)을 상회하지 못할 경우, 변제금은 청산가치 이상으로 상향 조정되어야 합니다. 아래 모의 <strong>계산기</strong>를 통해 본인의 대략적인 월 변제 예상 <strong>금액</strong>과 탕감률을 사전에 진단해 볼 수 있습니다.</p>
+
+            <div class="calculator-box">
+                <div class="form-grid">
+                    <div class="input-group">
+                        <label for="monthly-net-income">세후 월평균 실수령액 (원)</label>
+                        <input type="number" id="monthly-net-income" placeholder="예: 2800000" value="2800000">
+                    </div>
+                    <div class="input-group">
+                        <label for="dependent-count">인정 부양가족 수 (신청인 포함)</label>
+                        <select id="dependent-count">
+                            <option value="1">1인 가구 (본인)</option>
+                            <option value="2">2인 가구 (본인+부양가족 1인)</option>
+                            <option value="3" selected>3인 가구 (본인+부양가족 2인)</option>
+                            <option value="4">4인 가구 (본인+부양가족 3인)</option>
+                            <option value="5">5인 가구 이상</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="total-unsecured-debt">총 무담보 채무 원금 (원)</label>
+                        <input type="number" id="total-unsecured-debt" placeholder="예: 80000000" value="80000000">
+                    </div>
+                    <div class="input-group">
+                        <label for="total-liquid-assets">재산 청산가치 평가액 (원)</label>
+                        <input type="number" id="total-liquid-assets" placeholder="예: 15000000" value="15000000">
+                    </div>
+                    <div class="input-group">
+                        <label for="repay-period">변제 희망 기간 (개월)</label>
+                        <select id="repay-period">
+                            <option value="36" selected>36개월 (원칙)</option>
+                            <option value="48">48개월</option>
+                            <option value="60">60개월 (청산가치 보장 목적)</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="residence-region">제주도 내 거주 세부 지역</label>
+                        <select id="residence-region">
+                            <option value="jeju-dong">제주시 동지역 (노형, 연동, 이도, 아라 등)</option>
+                            <option value="jeju-eup">제주시 읍면 (애월, 한림, 조천, 구좌 등)</option>
+                            <option value="seogwipo-dong">서귀포시 동지역 (서홍, 동홍, 대륜 등)</option>
+                            <option value="seogwipo-eup">서귀포시 읍면 (대정, 남원, 성산 등)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button type="button" class="calc-action-btn" id="run-calc-btn">자가 진단 변제금 계산하기</button>
+
+                <div class="calc-result-panel" id="calc-result-box">
+                    <h4>자가 진단 시뮬레이션 결과 리포트</h4>
+                    <div class="result-row">
+                        <span class="label">적용 법정 최저생계비:</span>
+                        <span class="val" id="res-living-cost">0 원</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">월 예상 납입 변제금:</span>
+                        <span class="val" id="res-monthly-pay">0 원</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">총 변제 기간 및 총 상환 원금:</span>
+                        <span class="val" id="res-total-repay">0 원</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">원금 감면 탕감률(예상치):</span>
+                        <span class="val" id="res-relief-rate">0%</span>
+                    </div>
+                    <div class="result-row">
+                        <span class="label">청산가치 보장 충족 여부:</span>
+                        <span class="val" id="res-asset-guarantee">충족 완료</span>
+                    </div>
+                </div>
+            </div>
+
+            <h3>제주지방법원 인가 사건 채권 원금 탕감률 통계 지표</h3>
+            <p>아래 도표는 최근 법원을 통해 인가 결정을 받은 사건들의 원금 탕감률 구간 분포를 나타냅니다. 소득 수준이 낮고 부양가족이 많을수록 높은 감면율을 기대할 수 있습니다.</p>
+
+            <div class="chart-section">
+                <div class="chart-row">
+                    <div class="chart-header">
+                        <span>원금 70% 이상 대폭 감면 인가율</span>
+                        <span>42%</span>
+                    </div>
+                    <div class="chart-bar-bg">
+                        <div class="chart-bar-fill" style="width: 42%;"></div>
+                    </div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-header">
+                        <span>원금 50% ~ 70% 수준 감면 인가율</span>
+                        <span>35%</span>
+                    </div>
+                    <div class="chart-bar-bg">
+                        <div class="chart-bar-fill" style="width: 35%;"></div>
+                    </div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-header">
+                        <span>원금 30% ~ 50% 수준 감면 인가율</span>
+                        <span>16%</span>
+                    </div>
+                    <div class="chart-bar-bg">
+                        <div class="chart-bar-fill" style="width: 16%;"></div>
+                    </div>
+                </div>
+                <div class="chart-row">
+                    <div class="chart-header">
+                        <span>청산가치 반영에 따른 30% 미만 및 원금 100% 변제</span>
+                        <span>7%</span>
+                    </div>
+                    <div class="chart-bar-bg">
+                        <div class="chart-bar-fill" style="width: 7%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="community-analysis">
+            <h2>온라인 커뮤니티 평판 분석 및 내돈내산 실제 진행 후기 검토</h2>
+            <p>법률 사무소의 화려한 광고 문구보다 신청 희망자들이 신뢰하는 정보는 온라인 포털 <strong>네이버</strong>, <strong>구글</strong>과 각종 커뮤니티인 <strong>디시</strong>인사이드 회생파산 갤러리, <strong>보배드림</strong>, <strong>펨코</strong>(<strong>에펨코리아</strong>) 등에 올라오는 솔직한 <strong>내돈내산</strong> 후기입니다. 채무자들의 진솔한 고백 속에서 제주 관할 사건의 고유한 애로사항과 실전 대응 노하우를 명확히 엿볼 수 있습니다.</p>
+
+            <div class="info-card">
+                <p><strong>커뮤니티 빅데이터 교차 검증:</strong> 에펨코리아와 디시인사이드 참여자들의 다수 의견에 따르면, 제주도에 상주하지 않는 일부 서울권 대형 법률 플랫폼의 경우, 계약 전에는 비대면 전자소송이므로 서울에서 다 처리된다고 호언장담했으나 정작 제주지방법원 전담 회생위원의 까다로운 지역성 보정명령에 신속히 대처하지 못해 개시결정이 1년 가까이 지연되었다는 불만 사례가 자주 공유되고 있습니다.</p>
+            </div>
+
+            <p>다수의 경험자들은 인터넷 사이트 검색을 통해 무조건 수임료가 저렴한 <strong>성지</strong>나 법률사무소 <strong>좌표</strong>만을 찾는 것은 지극히 위험하다고 지적합니다. 회생 신청 직후 쏟아지는 채권추심원들의 독촉 전화와 직장 방문, 유체동산 가압류 압박을 즉시 중단시키는 금지명령이 기각될 경우 피말리는 고통이 지속되기 때문입니다. 따라서 신속한 전자접수 역량과 담당 변호사의 1:1 직접 서면 작성 시스템을 갖춘 곳을 <strong>추천</strong>하는 분위기입니다.</p>
+
+            <h3>주요 소셜 플랫폼 및 AI 채널별 정보 수집 트렌드</h3>
+            <p>최근에는 <strong>유튜브</strong> 실무 해설 영상, <strong>인스타그램</strong> 카드뉴스, <strong>페이스북</strong> 법률 그룹, <strong>트위터</strong>(X), 그리고 <strong>카카오톡</strong> 오픈채팅방이나 <strong>텔레그램</strong> 금융 피해자 모임방 등 소통 창구가 극대화되었습니다. 나아가 <strong>토스</strong>나 뱅크샐러드 등 핀테크 <strong>어플</strong>을 활용하여 자신의 총 채무와 금리를 일괄 조회한 뒤, 대화형 인공지능인 <strong>챗지피티</strong>(ChatGPT)와 구글 <strong>제미나이</strong>(Gemini) 등 <strong>AI</strong> 엔진에 복잡한 가용소득 산식과 관할 적합성을 사전 질의하는 똑똑한 채무자들이 대폭 증가하고 있습니다.</p>
+            
+            <p>하지만 AI 에이전트의 답변은 일반적인 법리 원칙을 설명하는 데 그치므로, 구체적으로 제주지방법원 담당 재판부 판사의 과거 인가 성향, 회생위원별 소명 요구 강도, 지역 특수 재산 평가 기준을 치밀하게 녹여내는 것은 결국 풍부한 도산 실무 경험을 보유한 전문 인력과의 심층 <strong>상담</strong>에서 결판납니다.</p>
+        </section>
+
+        <section id="faq-section">
+            <h2>자주 묻는 질문 (FAQ) - 제주도개인회생 핵심 10문 10답</h2>
+            <div class="faq-accordion">
+                <div class="faq-node">
+                    <div class="faq-q">
+                        <span>1. 개인회생을 신청하면 직장이나 가족들이 그 사실을 알게 되나요?</span>
+                        <span class="faq-q-indicator">+ 펼치기</span>
+                    </div>
+                    <div class="faq-a">
+                        원칙적으로 법원에서 직장이나 가족에게 회생 사실을 별도 통보하지 않습니다. 모든 법원 송달 문서는 대리인으로 선임된 변호사 및 법무사 사무실로 송달되도록 송달영수인 신고를 진행하므로 자택이나 직장으로 법원 우편물이 발송되지 않아 비밀이 철저히 보장됩니다. 단, 급여 가압류가 이미 들어온 상태에서 이를 해제하기 위해 회사 급여담당자에게 인가결정문을 제출할 때는 부득이하게 알려질 수 있습니다.
+                    </div>
+                </div>
+
+                <div class="faq-node">
+                    <div class="faq-q">
+                        <span>2. 제주도개인회생 접수 후 금지명령은 며칠 만에 나오나요?</span>
+                        <span class="faq-q-indicator">+ 펼치기</span>
+                    </div>
+                    <div class="faq-a">
+                        전자소송 시스템을 통해 법원에 접수되면 통상 사건번호 부여 후 영업일 기준 3일에서 7일 이내에 금지명령이 발령됩니다. 금지명령이 각 채권자에게 전자 송달되면 채권추심원들의 자택 방문, 독촉 전화, 문자 메시지, 급여 및 통장 압류 행위가 법률상 전면 금지됩니다. 단, 최근 채무 비율이 극단적으로 높거나 과거 개인회생 폐지 이력이 반복된 경우 기각될 수 있으며 이 경우 신속한 개시결정 유도가 필요합니다.
+                    </div>
+                </div>
+
+                <div class="faq-node">
+                    <div class="faq-q">
+                        <span>3. 주식, 가상화폐(코인), 스포츠 토토로 발생한 빚도 전액 탕감 대상인가요?</span>
+                        <span class="faq-q-indicator">+ 펼치기</span>
+                    </div>
+                    <div class="faq-a">
+                        개인파산과 달리 개인회생은 채무의 발생 원인을 불문하므로 사행성 채무나 낭비로 인한 빚도 신청 자격에 포함됩니다. 다만 서울회생법원 실무준칙과 달리 제주지방법원에서는 투자 손실금을 청산가치에 일정 비율 이상 반영하도록 명하는 보정권고가 내려질 가능성이 상존합니다. 따라서 변제율을 지나치게 높이지 않도록 전문가와 상의하여 반성문 및 생활고에 따른 부득이한 지출 경위를 체계적으로 소명해야 합니다.
+                    </div>
+                </div>
+
+                <div class="faq-node">
+                    <div class="faq-q">
+                        <span>4. 배우자 명의의 아파트나 토지, 예금 재산도 조사 대상인가요?</span>
+                        <span class="faq-q-indicator">+ 펼치기</span>
+                    </div>
+                    <div class="faq-a">
+                        회생 실무상 부부별산제가 원칙이나, 혼인 기간 중 공동으로 형성한 재산에 대해서는 실질적 기여도를 평가하여 배우자 재산의 50%를 신청인의 청산가치에 반영하도록 관행적인 조사가 이루어집니다. 단, 배우자가 상속이나 증여를 통해 취득한 고유재산(특유재산)임을 증빙서류(금융거래내역, 상속등기 등)로 완벽히 입증하면 청산가치 산입에서 완전히 제외할 수 있습니다.
+                    </div>
+                </div>
+
+                <div class="faq-node">
+                    <div class="faq-q">
+                        <span>5. 개인회생 중에도 본인 명의의 은행 체크카드나 통장을 사용할 수 있나요?</span>
+                        <span class="faq-q-indicator">+ 펼치기</span>
+                    </div>
+                    <div class="faq-a">
+                        네, 자유롭게 사용 가능합니다. 신용카드는 신용카드 발급 기준에 따라 일시적으로 정지되지만, 통장에 잔고가 있는 범위 내에서 결제되는 체크카드는 정상 발급 및 결제가 가능합니다. 다만 빚을 지고 있는 채권자 은행의 통장을 사용하면 상계처리(통장 잔액으로 대출금을 강제 상환하는 조치) 위험이 있으므로, 채무가 전혀 없는 제3의 1금융권이나 지역 농·축협, 신협, 새마을금고 계좌를 신규 개설하여 급여 및 생활비 통장으로 사용하는 것이 안전합니다.
+                    </div>
+                </div>
+
+                <div class="faq-node">
+                    <div class="faq-q">
+                        <span>6. 신용회복위원회 워크아웃과 법원 개인회생의 가장 큰 차이점은 무엇인가요?</span>
+                        <span class="faq-q-indicator">+ 펼치기</span>
+                    </div>
+                    <div class="faq-a">
+                        신용회복위원회 워크아웃은 협약된 금융기관 채무에 한해서만 조정이 가능하며, 채권자의 동의(과반수 이상)가 필수적입니다. 또한 원금 감면 폭이 제한적입니다. 반면 법원의 개인회생은 개인 사채, 보증채무, 통신비, 거래처 미수금까지 채권자의 동의 없이 강제 조정할 수 있으며 원금을 최대 90% 이상 대폭 탕감받을 수 있다는 결정적 차이점이 있습니다.
+                    </div>
+                </div>
+
+                <div class="faq-node">
+                    <div class="faq-q">
+                        <span>7. 개인회생 변제 기간 36개월 동안 변제금을 연체하면 어떻게 되나요?</span>
+                        <span class="faq-q-indicator">+ 펼치기</span>
+                    </div>
+                    <div class="faq-a">
+                        법률상 누적 변제금 연체 횟수가 3회 이상에 도달하면 법원은 개인회생 절차를 직권으로 폐지할 수 있습니다. 회생이 폐지되면 효력을 잃고 원래의 빚과 고율의 이자가 되살아나 채권추심이 재개됩니다. 만약 실직, 질병, 사고 등 불가피한 사유로 변제금 납부가 어려워졌다면 즉시 법원에 변제계획안 변경신청서나 특별면책 신청 요건을 검토하여 절차가 취소되지 않도록 신속히 방어 조치를 취해야 합니다.
+                    </div>
+                </div>
+
+                <div class="faq-node">
+                    <div class="faq-q">
+                        <span>8. 개인회생을 하면 보유하고 있는 차량이나 거주 중인 주택을 처분해야 하나요?</span>
+                        <span class="faq-q-indicator">+ 펼치기</span>
+                    </div>
+                    <div class="faq-a">
+                        처분하지 않고 그대로 유지할 수 있습니다. 이것이 파산과 구분되는 회생 제도의 장점입니다. 다만 보유 부동산이나 차량의 담보대출 원리금은 개인회생 별제권으로 분류되므로, 회생 변제금과 별개로 해당 금융기관에 매달 정상 납입해야 경매 처분을 막을 수 있습니다. 또한 차량 및 주택의 순자산 가치는 본인의 청산가치에 반영되므로 그 이상을 36개월간 변제해야 합니다.
+                    </div>
+                </div>
+
+                <div class="faq-node">
+                    <div class="faq-q">
+                        <span>9. 제주도 외곽 읍면 지역의 감귤 농가나 양돈, 양식업 종사자도 신청이 수월한가요?</span>
+                        <span class="faq-q-indicator">+ 펼치기</span>
+                    </div>
+                    <div class="faq-a">
+                        네, 가능합니다. 대정읍, 남원읍, 표선면, 한경면 등 농수축산 종사자는 매년 농산물 출하 시기에만 수입이 몰려 들어오는 특징이 있습니다. 제주지방법원은 이러한 농어촌의 특수성을 감안하여 분기별 납부 또는 반기별 집중 변제 방식 등 비전형적 변제계획안을 협의하거나, 연간 순소득을 12개월로 균등 분할 환산하여 매월 일정한 변제금을 납부하도록 합리적 조정안을 도출해 냅니다.
+                    </div>
+                </div>
+
+                <div class="faq-node">
+                    <div class="faq-q">
+                        <span>10. 면책 결정이 확정되면 신용점수는 즉시 복구되고 대출이 가능한가요?</span>
+                        <span class="faq-q-indicator">+ 펼치기</span>
+                    </div>
+                    <div class="faq-a">
+                        36개월 변제를 모두 완납하고 법원으로부터 최종 면책 결정을 받으면, 한국신용정보원에 등록되어 있던 개인회생 특수기록코드(1301)가 즉시 자동 삭제됩니다. 이로써 법적인 모든 채무가 면제되고 신용등급이 점진적으로 일반 등급으로 회복됩니다. 신규 신용카드 발급은 물론 은행 예적금 담보대출 등 통상적인 금융거래를 정상적으로 재개할 수 있습니다.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="authoritative-sources">
+            <h2>공인된 신뢰성 법률 정보 및 공공 참조 사이트</h2>
+            <p>개인회생은 법률과 사법부 판례에 의해 엄격하게 통제되는 절차이므로, 검증되지 않은 인터넷 허위 정보나 과장 광고에 현혹되지 않고 공인된 국가 행정 기관 및 법률 연구 포털의 공식 가이드라인을 참조하는 것이 권장됩니다.</p>
+            
+            <div class="external-authorities">
+                <a href="https://directxcheckh.koreahankang.com" target="_blank" rel="noopener">도산법 실무 리서치 및 제주회생 정보지원센터 (ReliableDone Law Hub)</a>
+                <a href="https://ecfs.scourt.go.kr" target="_blank" rel="noopener">대한민국 대법원 전자소송 공식 포털 (사건 접수 및 나의 사건 검색)</a>
+                <a href="https://namu.wiki/w/%EA%B0%9C%EC%9D%B8%ED%9A%8C%EC%83%9D" target="_blank" rel="noopener">나무위키 도산법 및 개인회생 제도 심층 해설 문서</a>
+            </div>
+        </section>
+
+        <div class="cta-banner">
+            <h3>감당하기 힘든 빚의 무게, 합법적 채무 탕감으로 다시 일어서세요</h3>
+            <p>제주지방법원 도산 절차 전담 솔루션을 통해 빚 독촉 중단과 최대 90% 원금 감면의 길을 열어드립니다.</p>
+            <a href="#calculator-simulation" class="cta-link-btn">자가 진단 견적 시뮬레이션 바로가기</a>
+        </div>
     </main>
-  </body>
-</html>
+
+  
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // FAQ 아코디언 기능 구현
+            const faqNodes = document.querySelectorAll('.faq-node');
+            faqNodes.forEach(node => {
+                const questionBar = node.querySelector('.faq-q');
+                const answerBox = node.querySelector('.faq-a');
+                const indicator = node.querySelector('.faq-q-indicator');
+
+                questionBar.addEventListener('click', () => {
+                    const isDisplayed = answerBox.style.display === 'block';
+
+                    // 다른 모든 열린 FAQ 닫기
+                    faqNodes.forEach(item => {
+                        item.querySelector('.faq-a').style.display = 'none';
+                        item.querySelector('.faq-q-indicator').textContent = '+ 펼치기';
+                    });
+
+                    if (!isDisplayed) {
+                        answerBox.style.display = 'block';
+                        indicator.textContent = '− 접기';
+                    }
+                });
+            });
+
+            // 2026-2027 법정 최저생계비 기준 데이터 (중위소득 60% 반영)
+            const livingCostStandards = {
+                1: 1465000,
+                2: 2420000,
+                3: 3090000,
+                4: 3740000,
+                5: 4350000
+            };
+
+            // 변제금 계산기 인터랙션
+            const calcBtn = document.getElementById('run-calc-btn');
+            const resultBox = document.getElementById('calc-result-box');
+
+            calcBtn.addEventListener('click', () => {
+                const income = parseFloat(document.getElementById('monthly-net-income').value) || 0;
+                const dependents = parseInt(document.getElementById('dependent-count').value) || 1;
+                const totalDebt = parseFloat(document.getElementById('total-unsecured-debt').value) || 0;
+                const liquidAssets = parseFloat(document.getElementById('total-liquid-assets').value) || 0;
+                const period = parseInt(document.getElementById('repay-period').value) || 36;
+
+                if (income <= 0 || totalDebt <= 0) {
+                    alert('실수령 월소득과 총 무담보 채무액을 올바르게 입력해주세요.');
+                    return;
+                }
+
+                const minLivingCost = livingCostStandards[dependents] || 1465000;
+                let calculatedMonthlyPay = income - minLivingCost;
+
+                if (calculatedMonthlyPay < 50000) {
+                    calculatedMonthlyPay = 50000; // 법원 최저 변제금 가이드라인
+                }
+
+                let totalRepayment = calculatedMonthlyPay * period;
+                let assetGuaranteeMet = true;
+
+                // 청산가치 보장의 원칙 검증
+                if (totalRepayment < liquidAssets) {
+                    assetGuaranteeMet = false;
+                    // 청산가치를 충족하도록 월 변제금 강제 재산출
+                    calculatedMonthlyPay = Math.ceil(liquidAssets / period);
+                    totalRepayment = calculatedMonthlyPay * period;
+                }
+
+                // 총 탕감액 및 탕감률 계산
+                let totalRelief = totalDebt - totalRepayment;
+                if (totalRelief < 0) totalRelief = 0;
+                let reliefRate = ((totalRelief / totalDebt) * 100).toFixed(1);
+
+                if (reliefRate < 0) reliefRate = 0;
+
+                // 결과 텍스트 바인딩
+                document.getElementById('res-living-cost').textContent = minLivingCost.toLocaleString('ko-KR') + ' 원';
+                document.getElementById('res-monthly-pay').textContent = calculatedMonthlyPay.toLocaleString('ko-KR') + ' 원';
+                document.getElementById('res-total-repay').textContent = period + '개월 총 ' + totalRepayment.toLocaleString('ko-KR') + ' 원';
+                document.getElementById('res-relief-rate').textContent = reliefRate + '% 감면';
+
+                const guaranteeElem = document.getElementById('res-asset-guarantee');
+                if (assetGuaranteeMet) {
+                    guaranteeElem.textContent = '충족 완료 (기존 소득 기준 정상 진행)';
+                    guaranteeElem.style.color = '#15803d';
+                } else {
+                    guaranteeElem.textContent = '청산가치 보장을 위해 월 변제금 상향 조정됨';
+                    guaranteeElem.style.color = '#b45309';
+                }
+
+                resultBox.style.display = 'block';
+                resultBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            });
+
+            // 시각화 통계 바 애니메이션 실행
+            const progressBars = document.querySelectorAll('.chart-bar-fill');
+            setTimeout(() => {
+                progressBars.forEach(bar => {
+                    const inlineWidth = bar.style.width;
+                    bar.style.width = '0%';
+                    setTimeout(() => {
+                        bar.style.width = inlineWidth;
+                    }, 50);
+                });
+            }, 300);
+        });
+    </script>
+  
